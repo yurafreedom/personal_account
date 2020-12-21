@@ -12934,6 +12934,7 @@ select.selected {
   overflow: hidden;
   background-color: #e8070f;
   cursor: pointer;
+  z-index: 10;
 }
 
 .account-block__profile-photo-file svg {
@@ -12950,14 +12951,14 @@ select.selected {
   height: calc(1.5em + .75rem + 2px);
   opacity: 0;
   margin: 0;
-  cursor: pointer;
+  cursor: inherit;
 }
 
 .account-block__profile-photo-inner {
   position: relative;
   display: block;
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.3;
   color: #0b3b9d;
@@ -13002,7 +13003,7 @@ select.selected {
 .account-block__balance-currency-block {
   display: block;
   text-align: center;
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 700;
   line-height: 1.2;
   color: #0b3b9d;
@@ -13023,7 +13024,7 @@ select.selected {
 .account-block__balance-earned-title,
 .account-block__balance-total-title,
 .account-block__balance-currency-title {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .account-block__navigation-block {
@@ -13045,7 +13046,7 @@ select.selected {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.2;
   color: #0b3b9d;
 }
@@ -13073,7 +13074,7 @@ select.selected {
 
 .account-block__content-title {
   display: block;
-  font-size: 30px;
+  font-size: 48px;
   font-weight: 800;
   color: #0b3b9d;
   margin-bottom: 20px;
@@ -13095,7 +13096,7 @@ select.selected {
 .account-block__complete-title,
 .account-block__details-title {
   display: block;
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 400;
   line-height: 1.2;
   color: #0b3b9d;
@@ -13147,7 +13148,7 @@ select.selected {
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -13164,10 +13165,6 @@ select.selected {
   flex-shrink: 0;
   color: #8e9a9d;
   margin-right: 30px;
-}
-
-.account-block__details-option-title.referral {
-  color: #8ea7cd;
 }
 
 .account-block__details-option-value {
@@ -13194,7 +13191,7 @@ select.selected {
   padding-right: 20px;
   background-color: #fff;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.3;
   color: #000;
@@ -13202,7 +13199,7 @@ select.selected {
 
 .account-block__details-input::placeholder {
   color: #0b3b9d;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -13216,9 +13213,9 @@ select.selected {
   display: block;
   width: 100%;
   max-width: 190px;
-  height: 48px;
+  height: 50px;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
   border-radius: 6px;
@@ -13312,6 +13309,9 @@ select.selected {
   .account-block__details-option-wrapper.social .account-block__details-option-value {
     width: 100%;
   }
+  .account-block__navigation-block ul {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -13361,11 +13361,35 @@ select.selected {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .account-block__content-title {
+    font-size: 30px;
+  }
+  .account-block__complete-title, .account-block__details-title {
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1365px) {
   .account-block__details-option {
     font-size: 16px;
+  }
+  .account-block__content-title {
+    font-size: 35px;
+  }
+  .account-block__complete-title, .account-block__details-title {
+    font-size: 24px;
+  }
+  .account-block__profile-photo-inner {
+    font-size: 20px;
+  }
+  .account-block__balance-earned-block, .account-block__balance-total-block, .account-block__balance-currency-block {
+    font-size: 20px;
+  }
+  .account-block__balance-earned-title, .account-block__balance-total-title, .account-block__balance-currency-title {
+    font-size: 16px;
+  }
+  .account-block__navigation-block ul {
+    font-size: 18px;
   }
   .account-block__details-option-title {
     max-width: 150px;
