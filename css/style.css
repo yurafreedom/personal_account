@@ -12941,7 +12941,6 @@ select.selected {
   position: absolute;
   display: block;
   flex-shrink: 0;
-  cursor: pointer;
 }
 
 .account-block__profile-file-input {
