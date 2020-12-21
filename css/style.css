@@ -12933,12 +12933,14 @@ select.selected {
   border-radius: 100%;
   overflow: hidden;
   background-color: #e8070f;
+  cursor: pointer;
 }
 
 .account-block__profile-photo-file svg {
   position: absolute;
   display: block;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .account-block__profile-file-input {
