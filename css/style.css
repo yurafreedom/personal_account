@@ -12932,7 +12932,7 @@ select.selected {
   height: 37px;
   border-radius: 100%;
   overflow: hidden;
-  background-color: #2dbe60;
+  background-color: #e8070f;
 }
 
 .account-block__profile-photo-file svg {
@@ -13282,8 +13282,13 @@ select.selected {
     font-size: 14px;
   }
   .account-block__details-option-title {
-    max-width: 85px;
+    width: 85px;
     margin-right: 15px; 
+  }
+  .account-block__details-option-value {
+    width: calc(100% - 95px);
+    word-break: break-word;
+    flex-shrink: 1;
   }
   .account-block__details-option-wrapper.social .account-block__details-option {
     display: block;
@@ -13298,6 +13303,12 @@ select.selected {
   }
   .account-block__content-title {
     font-size: 24px;
+  }
+  .account-block__details-option-wrapper.social .account-block__details-option-title {
+    width: 100%;
+  }
+  .account-block__details-option-wrapper.social .account-block__details-option-value {
+    width: 100%;
   }
 }
 
